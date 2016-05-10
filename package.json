@@ -1,0 +1,34 @@
+{
+  "name": "ble-bean-stream",
+  "version": "0.1.0",
+  "description": "Take a bean instance from ble-bean and make it a Node stream.",
+  "keywords": [
+    "bean",
+    "ble",
+    "logging",
+    "stream"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "J. Scott Smith",
+    "url": "https://about.me/jscottsmith"
+  },
+  "contributors": [
+    {
+      "name": "Paul Dhillon Weber",
+      "url": "https://www.linkedin.com/in/pauldhillonweber"
+    }
+  ],
+  "main": "./lib/ble-bean-stream",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HumansForward/ble-bean-stream.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "hooked-readable": "^0.1.0"
+  },
+  "engines": { "node": ">=4.4.3" }
+}
