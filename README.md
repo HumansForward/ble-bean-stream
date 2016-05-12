@@ -4,7 +4,7 @@ Take a Bean instance from [ble-bean](https://www.npmjs.com/package/ble-bean) and
 
 The [LightBlue Bean](https://punchthrough.com/bean) by [Punch Through Design](https://punchthrough.com) is a great little Bluetooth Arduino platform. And the [ble-bean](https://www.npmjs.com/package/ble-bean) module is awesome for connecting to the Bean from a Node application.
 
-This module provides a stream-based interface to the LightBlue Bean given a Bean instance that you obtain from ble-bean. From there, you can pipe the Readable stream to the console, a transform stream, file or database. See the [Examples](examples) for more.
+This module provides a stream-based interface to the LightBlue Bean given a Bean instance that you obtain from ble-bean. From there, you can pipe the Readable stream to the console, a transform stream, file or database. See the [examples](examples) for more.
 
 
 ## Important
@@ -67,13 +67,13 @@ Bean.discover((bean) => {
 
 ## Examples
 
-*	[poll-to-console](poll-to-console.js) — Periodically reads the accelerometer, temperature, and scratch values one and two. Logs the readings to the console as JSON.
+*	[poll-to-console](examples/poll-to-console.js) — Periodically reads the accelerometer, temperature, and scratch values one and two. Logs the readings to the console as JSON.
 
-*	[poll-to-mysql](poll-to-mysql.js) — Periodically reads the accelerometer and temperature. Logs the readings to a MySQL table.
+*	[poll-to-mysql](examples/poll-to-mysql.js) — Periodically reads the accelerometer and temperature. Logs the readings to a MySQL table.
 
-*	[notify-to-mongo](notify-to-mongo.js) — Subscribes to change notifications for scratch one, two and three. Logs the scratch values to a MongoDB collection.
+*	[notify-to-mongo](examples/notify-to-mongo.js) — Subscribes to change notifications for scratch one, two and three. Logs the scratch values to a MongoDB collection.
 
-*	[serial-to-file](serial-to-file.js) — Listens for data sent over the virtual serial port and writes it to a file.
+*	[serial-to-file](examples/serial-to-file.js) — Listens for data sent over the virtual serial port and writes it to a file.
 
 
 ## API
